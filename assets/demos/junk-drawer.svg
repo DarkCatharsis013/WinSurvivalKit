@@ -1,0 +1,7 @@
+<svg width="760" height="200" viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="200" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#E7B84B" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\junk-drawer.ps1</text>
+  <text x="28" y="86" fill="#A9B4C2" font-family="Consolas, monospace" font-size="18">Location   Path                               Files   SizeMB</text>
+  <text x="28" y="116" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">UserTemp   C:\Users\me\AppData\Local\Temp     1411    3561.19</text>
+  <text x="28" y="158" fill="#5CD6A7" font-family="Consolas, monospace" font-size="18">Preview only. Re-run with -Delete to remove files.</text>
+</svg>

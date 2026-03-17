@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#E7B84B" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\rename-rave.ps1 -Path .\clips -Find take -Replace shot</text>
+  <text x="28" y="86" fill="#A9B4C2" font-family="Consolas, monospace" font-size="18">OldName         NewName</text>
+  <text x="28" y="116" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">take_a.mov      shot_a.mov</text>
+  <text x="28" y="146" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">take_b.mov      shot_b.mov</text>
+  <text x="28" y="184" fill="#5CD6A7" font-family="Consolas, monospace" font-size="18">Preview only. Re-run with -Apply to rename files.</text>
+</svg>
