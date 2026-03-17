@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#5CD6A7" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\path-doctor.ps1</text>
+  <text x="28" y="86" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">C:\Program Files\Git\cmd                   OK</text>
+  <text x="28" y="116" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">C:\Python39\Scripts\                       Duplicate</text>
+  <text x="28" y="146" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">C:\Missing\Tool                            Missing</text>
+  <text x="28" y="184" fill="#67B7FF" font-family="Consolas, monospace" font-size="18">Checked 42 PATH entries. Problem entries: 7</text>
+</svg>

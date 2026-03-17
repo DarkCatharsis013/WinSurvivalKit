@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#E7B84B" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\desktop-radar.ps1</text>
+  <text x="28" y="86" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">Files      : 128</text>
+  <text x="28" y="114" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">Total Size : 2450.18 MB</text>
+  <text x="28" y="144" fill="#A9B4C2" font-family="Consolas, monospace" font-size="18">Top file types: .png, .zip, .ps1, .txt</text>
+  <text x="28" y="176" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">Largest files: export.mp4, archive.zip, notes.psd</text>
+</svg>

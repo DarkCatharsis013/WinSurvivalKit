@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#67B7FF" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\port-party.ps1 -Port 3000</text>
+  <text x="28" y="86" fill="#A9B4C2" font-family="Consolas, monospace" font-size="18">Port   Address      PID   Process</text>
+  <text x="28" y="116" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">3000   127.0.0.1    8124  node</text>
+  <text x="28" y="146" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">5173   127.0.0.1    9912  vite</text>
+  <text x="28" y="176" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">8080   0.0.0.0      5520  dotnet</text>
+</svg>
