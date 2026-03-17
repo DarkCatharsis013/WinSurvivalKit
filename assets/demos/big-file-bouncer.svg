@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="18" fill="#0F141B"/>
+  <text x="28" y="42" fill="#E7B84B" font-family="Consolas, monospace" font-size="22">PS&gt; .\tools\big-file-bouncer.ps1 -Path .\Downloads -Top 3</text>
+  <text x="28" y="86" fill="#A9B4C2" font-family="Consolas, monospace" font-size="18">SizeMB   LastWriteTime          FullName</text>
+  <text x="28" y="116" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">742.15   2026-03-16 22:30       iso\Windows.iso</text>
+  <text x="28" y="146" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">321.08   2026-03-15 14:11       captures\run.mp4</text>
+  <text x="28" y="176" fill="#F5F7FA" font-family="Consolas, monospace" font-size="18">218.64   2026-03-14 09:18       setup\package.zip</text>
+</svg>

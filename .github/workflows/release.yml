@@ -1,0 +1,67 @@
+name: Release WinSurvivalKit
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag, for example v1.0.0
+        required: true
+        type: string
+      release_name:
+        description: Release title
+        required: true
+        type: string
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Publish single-file launcher
+        shell: pwsh
+        run: |
+          dotnet publish .\Launcher\WinSurvivalKit.Launcher.csproj `
+            -c Release `
+            -r win-x64 `
+            --self-contained true `
+            -p:PublishSingleFile=true `
+            -o .\artifacts\single-file
+
+      - name: Package release artifact
+        shell: pwsh
+        run: |
+          Compress-Archive -Path .\artifacts\single-file\* -DestinationPath .\artifacts\WinSurvivalKit-win-x64.zip -Force
+
+      - name: Resolve release metadata
+        id: meta
+        shell: pwsh
+        run: |
+          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+            "tag=${{ inputs.tag }}" >> $env:GITHUB_OUTPUT
+            "name=${{ inputs.release_name }}" >> $env:GITHUB_OUTPUT
+          } else {
+            $tag = "${{ github.ref_name }}"
+            "tag=$tag" >> $env:GITHUB_OUTPUT
+            "name=WinSurvivalKit $tag" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.name }}
+          files: .\artifacts\WinSurvivalKit-win-x64.zip
